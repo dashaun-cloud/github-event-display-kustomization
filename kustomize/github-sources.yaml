@@ -13,16 +13,12 @@ spec:
     - deployment_status
     - fork
     - gollum
-    - installation
     - integration_installation
     - issue_comment
     - issues
     - label
     - member
-    - membership
     - milestone
-    - organization
-    - org_block
     - page_build
     - ping
     - project_card
@@ -36,7 +32,6 @@ spec:
     - release
     - repository
     - status
-    - team
     - team_add
     - watch
   ownerAndRepository: dashaun/dev.dashaun.service.gateway
