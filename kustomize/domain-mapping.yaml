@@ -7,4 +7,4 @@ spec:
   ref:
     kind: Service
     apiVersion: serving.knative.dev/v1
-    label: receive-adapter=github
+    name: githubsourcesample-g2h9w
