@@ -2,7 +2,7 @@ apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:
   name: github-message-dumper
-  namespace: default
+  namespace: knative-sources
 spec:
   template:
     spec:
