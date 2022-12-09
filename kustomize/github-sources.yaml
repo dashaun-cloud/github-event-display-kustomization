@@ -4,29 +4,40 @@ metadata:
   name: githubsourcesample
 spec:
   eventTypes:
-    - pull_request
+    - check_suite
     - commit_comment
-    - issues
-    - issue_comment
-    - code_scanning_alert
-    - dependabot_alert
+    - create
+    - delete
+    - deployment
+    - deployment_status
     - fork
-    - github_app_authorization
+    - gollum
+    - installation
+    - integration_installation
+    - issue_comment
+    - issues
     - label
+    - member
+    - membership
+    - milestone
+    - organization
+    - org_block
     - page_build
-    - project
+    - ping
     - project_card
+    - project_column
+    - project
     - public
+    - pull_request
+    - pull_request_review
+    - pull_request_review_comment
     - push
     - release
     - repository
-    - repository_vulnerability_alert
-    - security_advisory
-    - star
     - status
-    - workflow_dispatch
-    - workflow_job
-    - workflow_run
+    - team
+    - team_add
+    - watch
   ownerAndRepository: dashaun/dev.dashaun.service.gateway
   accessToken:
     secretKeyRef:
