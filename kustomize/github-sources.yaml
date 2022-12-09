@@ -13,7 +13,6 @@ spec:
     - deployment_status
     - fork
     - gollum
-    - integration_installation
     - issue_comment
     - issues
     - label
