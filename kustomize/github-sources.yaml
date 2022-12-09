@@ -1,0 +1,43 @@
+apiVersion: sources.knative.dev/v1
+kind: GitHubSource
+metadata:
+  name: githubsourcesample
+spec:
+  eventTypes:
+    - pull_request
+    - commit_comment
+    - issues
+    - issue_comment
+    - code_scanning_alert
+    - dependabot_alert
+    - fork
+    - github_app_authorization
+    - label
+    - page_build
+    - project
+    - project_card
+    - public
+    - push
+    - release
+    - repository
+    - repository_vulnerability_alert
+    - security_advisory
+    - star
+    - status
+    - workflow_dispatch
+    - workflow_job
+    - workflow_run
+  ownerAndRepository: dashaun/dev.dashaun.service.gateway
+  accessToken:
+    secretKeyRef:
+      name: githubsecret
+      key: accessToken
+  secretToken:
+    secretKeyRef:
+      name: githubsecret
+      key: secretToken
+  sink:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: github-message-dumper
