@@ -2,7 +2,7 @@ apiVersion: sources.knative.dev/v1alpha1
 kind: GitHubSource
 metadata:
   name: githubsourcesample
-  namespace: knative-sources
+  namespace: default
 spec:
   eventTypes:
     - check_suite
