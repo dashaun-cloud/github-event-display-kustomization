@@ -15,7 +15,6 @@ flux create source git github-event-display \
 
 ```bash
 flux create kustomization github-event-display \
-  --target-namespace=default \
   --depends-on knative-eventing \
   --source=github-event-display \
   --path="./kustomize" \
