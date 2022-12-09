@@ -4,3 +4,4 @@ resources:
   - event-display.yaml
   - github.yaml
   - github-secret.yaml
+  - github-sources.yaml
